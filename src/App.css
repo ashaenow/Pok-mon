@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards
+{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  color: aliceblue;
+  place-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+
+.card
+{
+  background: #333;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.7);
+  border-radius: .8rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
